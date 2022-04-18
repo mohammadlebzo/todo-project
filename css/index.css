@@ -1,12 +1,21 @@
+:root{
+  --main-color: #dddddda8;
+  --span-color: blue;
+  --pending-color: rgb(156, 156, 0);
+  --process-color: rgb(0, 133, 0);
+}
 body{
-
+  position: relative;
+  min-height: 100vh;
 }
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-
+th{
+  font-weight: bold;
+}
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -19,18 +28,28 @@ tr:nth-child(even) {
 header{
   padding: 20px;
   position: relative;
+  background-color: var(--main-color);
 }
 header ul{
   list-style: none;
 }
 header li{
   display: inline;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+header img{
+  border-radius: 25%;
 }
 footer{
-  position:absolute;
+  position: absolute;
   bottom:0;
   width:100%;
-  height:60px;
+  height:3rem;
+  background-color: var(--main-color);
+}
+footer ul{
+  padding-top: 20px;
 }
 footer li{
   display: inline;
@@ -47,9 +66,25 @@ footer li{
   padding-top: 50px;
 }
 #table-container{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 #logo-text{
   text-align: center;
+}
+#table-container h3{
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+#table-container h3 span{
+  color: var(--span-color);
+}
+.pending{
+  color: var(--pending-color);
+  font-weight: 700;
+}
+.process{
+  color: var(--process-color);
+  font-weight: 700;
 }

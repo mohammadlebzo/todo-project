@@ -12,7 +12,7 @@
 <body>
     <header>
         <ul>
-            <li id="logo-text"><img src="./assets/logo.jpg" alt="logo" height="100px" width="100px"> Sticky Note</li>
+            <li id="logo-text"><img src="./assets/logo.jpg" alt="logo" height="100px" width="100px"></li>
             <div id="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -21,19 +21,26 @@
     </header>
     <main>
         <div id="about-main-container">
-            <h2>About Me</h2>
-            <p>Name is <b>Mohammad lebzo.<b></p>
-            <p>I'm a Software Engineer looking to enhance his technical skills.</p>
+            <h2><span>About</span> Me</h2>
+            <div class="about-container">
+                <div class="img-container">
+                    <img src="./assets/logo.jpg" alt="logo">
+                </div>
+                <div class="info-container">
+                    <p>Name is <span>Mohammad lebzo</span>.</p>
+                    <p>I'm a <span>Software Engineer</span> looking to enhance his technical skills.</p>
+                </div>
+            </div>
             <br>
-            <h2>Provide Your Info:</h2>
+            <h3>Contact Us:</h3>
             <form action="">
                 <label for="fname">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="name"><br>
+                <input type="text" id="name" class="input-feild" name="name" placeholder="name"><br>
                 <label for="lname">Email:</label><br>
-                <input type="text" id="email" name="email" placeholder="Example@email.com"><br>
+                <input type="text" id="email" class="input-feild" name="email" placeholder="Example@email.com"><br>
                 <label for="lname">Message:</label><br>
-                <input type="text" id="message" name="message" placeholder="message"><br><br>
-                <input type="submit" value="Submit">
+                <input type="text" id="message" class="input-feild" name="message" placeholder="message"><br><br>
+                <input type="submit" class="btn" value="Submit">
               </form> 
         </div>
     </main>

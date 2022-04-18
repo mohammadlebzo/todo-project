@@ -1,11 +1,56 @@
 h2{
     font-size: 30px;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
 }
 p{
     padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+form{
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+form > *{
+    line-height: 2rem;
 }
 #about-main-container{
     padding-left: 20px;
+}
+#about-main-container span{
+    font-weight: bold;
+}
+#about-main-container h2 span{
+    color: blue;
+}
+.about-container{
+    display: flex;
+}
+.about-container > div{
+    margin: 2rem;
+}
+.img-container{
+    width: 40%;
+    padding-left: 5rem;
+}
+.info-container{
+width: 60%;
+padding-top: 3rem;
+}
+.img-container img{
+    height: 100%;
+    width: 80%;
+    border-radius: 50%;
+}
+.input-feild{
+    width: 60%;
+}
+.btn{
+    width: 30%;
 }
